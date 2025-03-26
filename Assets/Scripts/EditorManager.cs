@@ -7,8 +7,11 @@ public class EditorManager : MonoBehaviour
 {
     public static EditorManager instance = null;
 
+    public GameObject fourBitLine;
+    
     public float bpm = 60;
     public bool isPressed = false;
+    public int maxChartHeight = 4;
     
     void Awake()
     {
@@ -21,4 +24,5 @@ public class EditorManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 }
